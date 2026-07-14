@@ -1,68 +1,90 @@
-body{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    background-color:linen;
-    
-    
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: linen;
+    margin: 0; 
 }
 
-.container{
-    display:flex;
-    width:250px;
-    height: 350px;
+.container {
+    display: flex;
+    flex-direction: column; 
+    width: 90%;             
+    max-width: 600px; 
+
     background-color: white;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
+    border-radius: 7px;     
     text-align: justify;
-    
-
-}
-button{
-   background-color:darkgreen; 
-  color: white;              
-  padding: 8px 15px;        
-  border: none;              
-  border-radius: 4px;        
-  font-size: 16px;          
-  font-weight: 500;         
-  cursor: pointer;          
-             
-  align-items: center; 
-  
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+    overflow: hidden;       
 }
 
-button:hover{
+
+img {
+    width: 100%;            
+    max-height: 350px;          
+    object-fit: cover;  
+}
+
+.content {
+    display: block;
+    padding: 24px;          
+}
+
+button {
+    background-color: darkgreen; 
+    color: white;              
+    padding: 12px 15px;           
+    border: none;              
+    border-radius: 4px;        
+    font-size: 16px;          
+    font-weight: 500;         
+    cursor: pointer;          
+    width: 100%;            
+    margin-top: 15px;       
+}
+
+button:hover {
     background-color: black;
 }
-h1,.new {
-   
- 
-  font-family: "Fraunces", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "SOFT" 0,
-    "WONK" 0;
+
+h1, .new {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;       
+    font-style: normal;
+    font-variation-settings:
+      "SOFT" 0,
+      "WONK" 0;
 }
 
-
-.new{
+.new {
     color: green;
 }
 
-img{
-    border-top-left-radius: 7px;
-    border-bottom-left-radius: 7px;
-}
-.content{
-    display: block;
-    margin-right: 8px;
-    margin-left: 8px;
-}
-.old{
+.old {
     text-decoration: line-through;
+    color: gray;
+    margin-left: 8px;       
 }
 
+
+   
+@media (min-width: 600px) {
+    .container {
+        flex-direction: row; 
+    }
+
+    img {
+        width: 100%;          
+        height: auto;        
+    }
+
+    .content {
+        width: 50%;          
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+    }
+}
