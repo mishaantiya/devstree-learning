@@ -1,0 +1,28 @@
+@media(max-width:768px){
+
+
+
+
+}
+body{
+    background-color:papayawhip ;
+}
+
+button{
+   background-color:  green;
+}
+
+button:hover{
+    background-color: darkgreen;
+}
+.container{
+    flex-direction:column;
+    width: 270px;
+    height: 550px;
+    background-color: white;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    text-align: justify;
+    align-items: center;
+    align-self: center;
+}

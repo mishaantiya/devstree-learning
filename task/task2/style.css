@@ -1,0 +1,59 @@
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background-color:black;
+    color:white;
+    
+    
+}
+
+.container{
+    display:flex;
+    width:250px;
+    height: 350px;
+    background-color:hsla(268, 100%, 17%, 1);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    text-align: justify;
+    
+
+}
+
+h1,.new {
+   
+ 
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+
+
+.new{
+    color: white;
+}
+
+img{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.content{
+    display: block;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.old{
+    text-decoration: line-through;
+}
+
+b{
+    color: purple;
+}
+.c{
+    font-size: 8px;
+}
