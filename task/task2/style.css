@@ -3,7 +3,7 @@ body{
     justify-content:center;
     align-items:center;
     height:100vh;
-    background-color:black;
+    background-color:rgb(11, 4, 25);
     color:white;
     
     
@@ -11,11 +11,11 @@ body{
 
 .container{
     display:flex;
-    width:250px;
-    height: 350px;
-    background-color:hsla(268, 100%, 17%, 1);
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
+    width:270px;
+    height: 230px;
+    background-color:rgb(24, 9, 56);
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
     text-align: justify;
     
 
@@ -31,17 +31,22 @@ h1,.new {
   font-variation-settings:
     "SOFT" 0,
     "WONK" 0;
+    font-size:25px;
 }
 
 
-.new{
-    color: white;
-}
+
 
 img{
-    border-top-left-radius: 7px;
-    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    height: 230px;
+    width: 270px;
+     filter: sepia(100%) saturate(300%) hue-rotate(230deg) brightness(50%) contrast(90%);
+
+
 }
+
 .content{
     display: block;
     margin-right: 8px;
@@ -54,6 +59,18 @@ img{
 b{
     color: purple;
 }
-.c{
+.c, .t, .q{
     font-size: 8px;
+}
+.footer{
+    display: flex;
+    gap: 15%;
+}
+
+@media (min-width: 100px) {
+    .container {
+       display: flex;
+        flex-direction: row;
+       
+    }
 }
