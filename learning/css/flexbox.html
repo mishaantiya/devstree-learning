@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    *{
+        background-color: aquamarine;
+        box-sizing: border-box;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        background-color: bisque;
+        gap: 10px;
+    }
+    .content{
+        padding: 20px;
+        font-size: 15px;
+        margin: 10px;
+        background-color: brown;
+        width: 100%;
+        color: aliceblue;
+    }
+
+    @media (max-width: 450px){
+     .container{ 
+        flex-direction: column;
+        background-color: pink;
+      }
+     
+    }
+</style>
+<body>
+    
+    <h1> Hello Garden!!</h1>
+    <p>Some Flowers from the garden</p>
+    <div class="container">
+        
+            <div class="content">Rose</div>
+            <div class="content">Sunflower</div>
+            <div class="content">Lotus</div>
+            <div class="content">Marygold</div>
+        </div>
+    </div>
+</body>
+</html>
